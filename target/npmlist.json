@@ -1,0 +1,14 @@
+{
+  "version": "0.0.0",
+  "name": "react-monorepo",
+  "dependencies": {
+    "core-js": { "version": "3.25.5" },
+    "react-dom": { "version": "18.2.0" },
+    "react-is": { "version": "18.2.0" },
+    "react-router-dom": { "version": "6.4.1" },
+    "react": { "version": "18.2.0" },
+    "regenerator-runtime": { "version": "0.13.7" },
+    "styled-components": { "version": "5.3.5" },
+    "tslib": { "version": "2.4.0" }
+  }
+}
