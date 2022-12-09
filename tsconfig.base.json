@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@artemis/components": ["libs/components/src/index.ts"],
+      "@artemis/hooks": ["libs/hooks/src/index.ts"],
+      "@artemis/modules": ["libs/modules/src/index.ts"],
+      "@artemis/utils": ["libs/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
