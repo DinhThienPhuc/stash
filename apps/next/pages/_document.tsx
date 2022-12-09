@@ -1,13 +1,15 @@
 /* eslint-disable react/display-name */
+
 import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
   DocumentContext,
   DocumentInitialProps,
-} from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+  Head,
+  Html,
+  Main,
+  NextScript,
+} from "next/document";
+
+import { ServerStyleSheet } from "styled-components";
 
 export default class CustomDocument extends Document {
   static async getInitialProps(
