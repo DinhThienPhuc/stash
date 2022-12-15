@@ -10,8 +10,6 @@ const StyledApp = styled.div`
 `;
 
 export function App() {
-  console.log("me asass");
-
   return (
     <StyledApp>
       <NxWelcome title="react" />
