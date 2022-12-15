@@ -10,7 +10,7 @@
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/next",
-        "outputPath": "dist/apps/next"
+        "outputPath": "apps/next/build"
       },
       "configurations": {
         "development": {
@@ -25,7 +25,7 @@
       "options": {
         "buildTarget": "next:build",
         "dev": true,
-        "port": 4201
+        "port": 4001
       },
       "configurations": {
         "development": {
