@@ -1,6 +1,8 @@
 import { Link, Route, Routes } from "react-router-dom";
 
+import { BASE_NAME } from "@artemis/utils";
 import NxWelcome from "./nx-welcome";
+import { Switch } from "@artemis/components";
 import styled from "styled-components";
 
 const StyledApp = styled.div`
@@ -8,10 +10,13 @@ const StyledApp = styled.div`
 `;
 
 export function App() {
+  console.log("me asass");
+
   return (
     <StyledApp>
       <NxWelcome title="react" />
-
+      {BASE_NAME}
+      <Switch />
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
       {/* Feel free to move and update them to fit your needs */}
