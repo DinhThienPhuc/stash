@@ -3,10 +3,9 @@
   "npmScope": "artemis",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint"],
-        "accessToken": "YjQ3OGU1ODAtNDRmNC00ZjdjLWEyYmMtMjQ0NmIxNTgyNGUwfHJlYWQtd3JpdGU="
+        "cacheableOperations": ["build", "lint"]
       }
     }
   },
@@ -24,11 +23,16 @@
     "production": ["default", "!{projectRoot}/.eslintrc.json"],
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "apps"
+  },
   "generators": {
     "@nrwl/react": {
       "application": {
         "style": "styled-components",
         "linter": "eslint",
+        "bundler": "webpack",
         "babel": true
       },
       "component": {
@@ -46,5 +50,5 @@
       }
     }
   },
-  "defaultProject": "next"
+  "defaultProject": "react"
 }
